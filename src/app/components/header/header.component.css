@@ -1,22 +1,13 @@
-div{
-    background-color: #a2a6aa;
-}
-
-app-social{
-    float: right;
-    margin-top: 25px;
-    
-}
 
 .toolbar {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 75px;
     display: flex;
     align-items: center;
-    background-color: #d27219;
+    background-color: #8e9aa7;
     color: white;
     font-weight: 600;
   }
@@ -26,7 +17,7 @@ app-social{
   }
 
   .toolbar #logo {
-    height: 60px;
+    height: 50px;
     margin: 0 16px;
   }
 
@@ -40,3 +31,12 @@ app-social{
   .toolbar #text {
     font-size: 20px;
   }
+
+  .bannerimg{
+    width: 85%;
+    height: 300px;
+    position: relative;
+    margin: 80px auto;
+    border: 2px solid black;
+    border-radius: 30px;
+}
