@@ -7,7 +7,36 @@ app-social{
     margin-top: 25px;
     
 }
-app-banner{
-    float: center;
-    
-}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: #d27219;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #logo {
+    height: 60px;
+    margin: 0 16px;
+  }
+
+  .toolbar #login {
+    margin: 0 16px;
+  }
+
+  .toolbar #logo:hover {
+    opacity: 0.8;
+  }
+  .toolbar #text {
+    font-size: 20px;
+  }
