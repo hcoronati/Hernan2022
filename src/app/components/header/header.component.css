@@ -14,15 +14,18 @@
 
   .toolbar img {
     margin: 0 16px;
+    
   }
 
   .toolbar #logo {
     height: 50px;
     margin: 0 16px;
+    
   }
 
   .toolbar #login {
     margin: 0 16px;
+    margin-right: 0.5cm;
   }
 
   .toolbar #logo:hover {
@@ -36,7 +39,8 @@
     width: 85%;
     height: 300px;
     position: relative;
-    margin: 80px auto;
+    margin: 85px auto;
     border: 2px solid black;
     border-radius: 30px;
+    margin-left: 80px;
 }
