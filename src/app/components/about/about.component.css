@@ -1,6 +1,6 @@
 .perfil{
     width: 105px;
-    height: 146px;
+    height: 126px;
     margin-top: -70px;
     margin-left: 120px;
 }
@@ -20,4 +20,15 @@
 }
 .row{
     padding: 20px;
+}
+/*estilo foto perfil*/
+@media (min-width: 576px){
+    #fotoperfil{
+        position: absolute;
+        width: 10%;
+        /*border-radius: 100%;*/
+        box-shadow: 3px 3px 3px grey;
+        left: 5%;
+        top: 350px;
+    }
 }
