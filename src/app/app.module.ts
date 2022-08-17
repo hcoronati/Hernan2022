@@ -11,6 +11,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { HomeComponent } from './components/home/home.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HcskillsComponent } from './components/hcskills/hcskills.component';
+import { ProyectosparticComponent } from './components/proyectospartic/proyectospartic.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +26,14 @@ import { InformacionComponent } from './components/informacion/informacion.compo
     AboutComponent,
     ExperiencesComponent,
     HomeComponent,
-    InformacionComponent
+    InformacionComponent,
+    HcskillsComponent,
+    ProyectosparticComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
