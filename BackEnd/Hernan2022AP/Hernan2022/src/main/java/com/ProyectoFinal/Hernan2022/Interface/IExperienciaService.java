@@ -1,4 +1,4 @@
-package main.java.com.ProyectoFinal.Hernan2022.Interface;
+package com.ProyectoFinal.Hernan2022.Interface;
 
 import com.ProyectoFinal.Hernan2022.Entity.Experiencia;
 import java.util.List;

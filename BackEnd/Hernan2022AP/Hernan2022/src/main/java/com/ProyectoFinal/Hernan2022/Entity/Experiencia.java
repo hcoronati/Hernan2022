@@ -1,4 +1,4 @@
-package main.java.com.ProyectoFinal.Hernan2022.Entity;
+package com.ProyectoFinal.Hernan2022.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,5 +1,5 @@
 
-package main.java.com.ProyectoFinal.Hernan2022.Repository;
+package com.ProyectoFinal.Hernan2022.Repository;
 
 import com.ProyectoFinal.Hernan2022.Entity.Habilidad;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,5 +1,5 @@
 
-package main.java.com.ProyectoFinal.Hernan2022.Interface;
+package com.ProyectoFinal.Hernan2022.Interface;
 
 import com.ProyectoFinal.Hernan2022.Entity.Habilidad;
 import java.util.List;

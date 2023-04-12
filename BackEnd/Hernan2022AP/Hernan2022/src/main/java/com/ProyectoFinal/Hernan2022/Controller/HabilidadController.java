@@ -1,5 +1,5 @@
 
-package main.java.com.ProyectoFinal.Hernan2022.Controller;
+package com.ProyectoFinal.Hernan2022.Controller;
 
 import com.portfolioAP.Corosoft.Entity.Habilidad;
 import com.portfolioAP.Corosoft.Interface.IHabilidadService;

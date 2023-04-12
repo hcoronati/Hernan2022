@@ -1,4 +1,4 @@
-package main.java.com.ProyectoFinal.Hernan2022.Controller;
+package com.ProyectoFinal.Hernan2022.Controller;
 
 import com.ProyectoFinal.Hernan2022.Entity.Experiencia;
 import com.ProyectoFinal.Hernan2022.Interface.IExperienciaService;

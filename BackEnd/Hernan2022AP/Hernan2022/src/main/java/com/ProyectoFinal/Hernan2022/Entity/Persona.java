@@ -22,7 +22,13 @@ public class Persona {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+    @NotNull
+    @Size(min = 1, max = 50, message = "no cumple con la longitud")
+
     private String apellido;
+    @NotNull
+    @Size(min = 1, max = 50, message = "no cumple con la longitud")
+    
     private String ocupacion;
     private String fecha_nac;
     private String correo;
