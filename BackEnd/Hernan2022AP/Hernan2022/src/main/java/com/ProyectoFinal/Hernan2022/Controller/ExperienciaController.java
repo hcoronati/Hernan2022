@@ -4,7 +4,7 @@ import com.ProyectoFinal.Hernan2022.Entity.Experiencia;
 import com.ProyectoFinal.Hernan2022.Interface.IExperienciaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,21 +26,21 @@ public class ExperienciaController {
         return iexperienciaService.getExperiencia();
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/experiencias/crear")
     public String createExperiencia(@RequestBody Experiencia experiencia){
         iexperienciaService.saveExperiencia(experiencia);
         return "La experiencia se creo con éxito";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/experiencias/borrar/{id}")
     public String deleteExperiencia(@PathVariable Long id){
         iexperienciaService.deleteExperiencia(id);
         return "La experiencia fue eliminada";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+//    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/experiencias/editar/{id}")
     public Experiencia editExperiencia(@PathVariable Long id,
                                    @RequestParam("nombre_expe") String nuevoNombre,

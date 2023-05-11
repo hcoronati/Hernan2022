@@ -1,11 +1,11 @@
 
 package com.ProyectoFinal.Hernan2022.Controller;
 
-import com.portfolioAP.Corosoft.Entity.Habilidad;
-import com.portfolioAP.Corosoft.Interface.IHabilidadService;
+import com.ProyectoFinal.Hernan2022.Entity.Habilidad;
+import com.ProyectoFinal.Hernan2022.Interface.IHabilidadService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,21 +28,21 @@ public class HabilidadController {
         return IhabilidadService.getHabilidad();
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+ //   @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/habilidades/crear")
     public String createHabilidad(@RequestBody Habilidad habilidad){
         IhabilidadService.saveHabilidad(habilidad);
         return "La habilidad se creo con éxito";
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+ //   @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/habilidades/borrar/{id}")
     public String deleteHabilidad(@PathVariable Long id){
         IhabilidadService.deleteHabilidad(id);
         return "La habilidad fue eliminada";
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+ //    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/habilidades/editar/{id}")
     public Habilidad editHabilidad(@PathVariable Long id,
                                 @RequestParam("nombre") String nuevoNombre,

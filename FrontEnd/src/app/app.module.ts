@@ -14,6 +14,7 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HcskillsComponent } from './components/hcskills/hcskills.component';
 import { ProyectosparticComponent } from './components/proyectospartic/proyectospartic.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ProyectosparticComponent } from './components/proyectospartic/proyectos
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
